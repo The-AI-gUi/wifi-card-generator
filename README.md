@@ -1,62 +1,74 @@
 # 📶 WiFi Card Generator
 
-Generate beautiful printable WiFi cards with QR codes.
+Create beautiful printable WiFi cards with QR codes.
 
-Built by The AI GUY 👽🤖
+Built by **The AI GUY 👽🤖**
 
 ---
 
 ## Features
 
-✅ Live QR generation
+✅ Live WiFi QR generation
 
-✅ WPA / WPA2 / WPA3 Support
+✅ WPA / WPA2 / WPA3 support
 
-✅ WEP Support
+✅ WEP support
 
-✅ Hidden Networks
+✅ Hidden networks
 
-✅ Printable WiFi Cards
+✅ Front & Back card design
 
-✅ Front & Back Card Design
+✅ Telegram QR integration
 
-✅ Telegram QR Integration
+✅ YouTube QR integration
 
-✅ YouTube QR Integration
+✅ Responsive layout
 
-✅ Responsive Design
+✅ Print-ready card
 
-✅ Modern Dark UI
+✅ Modern glassmorphism UI
 
-✅ 3D Card Effects
+✅ 3D card effects
 
 ---
 
-## Screenshot
+## Screenshots
 
-Add a screenshot here after upload.
+assets/preview.png
 
 ---
 
 ## Usage
 
-1. Enter WiFi name (SSID)
-2. Enter password
-3. Select security type
-4. Print card
-5. Scan with phone
+1. Enter SSID
+2. Enter Password
+3. Choose security type
+4. Print or download card
+5. Scan and connect
+
+---
+
+## Live Demo
+
+Coming Soon
 
 ---
 
 ## Author
 
-### The AI GUY 👽🤖
+The AI GUY
 
-- YouTube: https://www.youtube.com/@The_AI_gUi
-- GitHub: https://github.com/The-AI-gUi
+GitHub:
+https://github.com/The-AI-gUi
+
+YouTube:
+https://www.youtube.com/@The_AI_gUi
+
+Telegram:
+https://t.me/TheAIGUY
 
 ---
 
 ## License
 
-MIT License
+MIT
