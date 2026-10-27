@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WiFi Card Generator · The AI GUY</title>
+  <meta name="description" content="Make a scannable WiFi card in seconds. Built by The AI GUY.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Manrope:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Shoelace is only used for the QR code component -->
+  <script type="module"
+    src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.46/dist/shoelace.js"></script>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="The AI GUY">
+      <span class="brand-mark">AI</span>
+      <span class="brand-name">The AI GUY</span>
+    </a>
+    <nav class="top-links" aria-label="Community links">
+      <a data-link="youtube" target="_blank" rel="noopener">YouTube</a>
+      <a data-link="telegram" target="_blank" rel="noopener">Telegram</a>
+      <a data-link="github" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="panel" aria-labelledby="form-title">
+      <h1 id="form-title">Connect to WiFi</h1>
+      <p class="lede">Type your network details. The card updates as you type.</p>
+
+      <form id="wifi-form" autocomplete="off" novalidate>
+        <label class="field">
+          <span>Network name</span>
+          <input id="ssid" name="ssid" type="text" placeholder="e.g. AI-GUY-5G" maxlength="32" spellcheck="false">
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <div class="pw">
+            <input id="password" name="password" type="password" placeholder="Network password" maxlength="63"
+              spellcheck="false">
+            <button type="button" id="toggle-pw" class="ghost" aria-pressed="false">Show</button>
+          </div>
+        </label>
+
+        <div class="row">
+          <label class="field">
+            <span>Security</span>
+            <select id="security">
+              <option value="WPA" selected>WPA / WPA2 / WPA3</option>
+              <option value="WEP">WEP</option>
+              <option value="nopass">No password</option>
+            </select>
+          </label>
+          <label class="check">
+            <input id="hidden" type="checkbox"> Hidden network
+          </label>
+        </div>
+
+        <label class="check">
+          <input id="show-pass" type="checkbox" checked> Print the password on the card
+        </label>
+
+        <fieldset class="seg">
+          <legend>Back of the card links to</legend>
+          <label><input type="radio" name="back" value="telegram" checked><span>Telegram group</span></label>
+          <label><input type="radio" name="back" value="youtube"><span>YouTube channel</span></label>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="stage-wrap" aria-label="Card preview">
+      <div class="stage" id="stage">
+        <div class="tilt" id="tilt">
+          <div class="card" id="card">
+
+            <!-- FRONT -->
+            <article class="face front" aria-label="Front of the card">
+              <div class="front-top">
+                <span class="tag"><b>AI</b> The AI GUY</span>
+                <span class="wifi-glyph" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round">
+                    <path d="M2 9a15 15 0 0 1 20 0" />
+                    <path d="M5.5 12.5a10 10 0 0 1 13 0" />
+                    <path d="M9 16a5 5 0 0 1 6 0" />
+                    <circle cx="12" cy="19.5" r="1" fill="currentColor" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="front-body">
+                <div class="creds">
+                  <p class="k">Network</p>
+                  <p class="v" id="out-ssid">Your network</p>
+                  <p class="k pass-row">Password</p>
+                  <p class="v mono pass-row" id="out-pass">••••••••</p>
+                </div>
+                <div class="qr-box" id="qr-box">
+                  <sl-qr-code id="qr-wifi" value="WIFI:T:nopass;S:Your network;;" size="150" radius="0.4" fill="#0B1020"
+                    background="#ffffff" error-correction="M"></sl-qr-code>
+                  <span class="qr-idle">Add a network name</span>
+                </div>
+              </div>
+
+              <p class="hint">Point your phone camera at the code to join.</p>
+              <div class="sheen" aria-hidden="true"></div>
+            </article>
+
+            <!-- BACK -->
+            <article class="face back" aria-label="Back of the card">
+              <div class="back-top">
+                <span class="tag light"><b>AI</b> The AI GUY</span>
+              </div>
+              <div class="back-body">
+                <div>
+                  <h2 id="back-title">Join the Telegram group</h2>
+                  <p class="back-sub">Tools, tutorials and cybersecurity tips.</p>
+                  <p class="handle" id="back-handle">t.me/TheAIGUY</p>
+                </div>
+                <div class="qr-box small">
+                  <sl-qr-code id="qr-back" value="https://t.me/TheAIGUY" size="104" radius="0.4" fill="#0B1020"
+                    background="#ffffff" error-correction="M"></sl-qr-code>
+                </div>
+              </div>
+              <div class="sheen" aria-hidden="true"></div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="flip" class="btn secondary">Flip card</button>
+        <button type="button" id="print" class="btn primary">Print WiFi card</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="community" aria-labelledby="community-title">
+    <div class="community-copy">
+      <h2 id="community-title">Built by The AI GUY</h2>
+      <p>Free tools, open-source projects and cybersecurity know-how. Come hang out.</p>
+    </div>
+    <div class="community-links">
+      <a class="social yt" data-link="youtube" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <rect x="1.5" y="4.5" width="21" height="15" rx="4.5" fill="currentColor" />
+          <path d="M10 9l5 3-5 3z" fill="#fff" />
+        </svg>
+        <span><b>YouTube channel</b><small>Watch the videos</small></span>
+      </a>
+      <a class="social tg" data-link="telegram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <path fill="currentColor"
+            d="M21.6 3.4 2.9 10.6c-.9.4-.9 1.1 0 1.4l4.7 1.5 1.8 5.6c.2.6.9.7 1.3.3l2.6-2.4 4.8 3.5c.6.4 1.2.2 1.4-.6l3.1-15.4c.2-1-.4-1.4-1-1.1z" />
+        </svg>
+        <span><b>Telegram group</b><small>Chat with the community</small></span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>© <span id="year"></span> The AI GUY · Open source on <a data-link="github" target="_blank"
+        rel="noopener">GitHub</a></span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
