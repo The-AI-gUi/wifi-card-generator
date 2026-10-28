@@ -36,12 +36,11 @@ assets/preview.png
 
 ### Card Preview
 
-assets/Screenshot-1.png
+assets\Screenshot-1.png
 
 ### Mobile / Print View
 
-assets/Screenshot-2.png
-
+assets\Screenshot-2.png
 ---
 
 ## 🚀 Live Demo
@@ -171,7 +170,7 @@ https://github.com/The-AI-gUi/wifi-card-generator/issues
 
 - GitHub: https://github.com/The-AI-gUi
 - YouTube: https://www.youtube.com/@The_AI_gUi
-- Telegram: https://t.me/TheAIGUY
+- Telegram: https://t.me/+ftkLjIBFmAo0OTVl
 
 ---
 
