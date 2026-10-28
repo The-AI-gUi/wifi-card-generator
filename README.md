@@ -38,11 +38,11 @@ Built by **The AI GUY 👽🤖**
 
 ### Card Preview
 
-![Card Preview](assets/screenshot-1.png)
+![Card Preview](assets/Screenshot-1.png)
 
 ### Mobile / Print View
 
-![Mobile Print View](assets/screenshot-2.png)
+![Mobile Print View](assets/Screenshot-2.png)
 
 ---
 
