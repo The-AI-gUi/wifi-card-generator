@@ -1,5 +1,7 @@
 # 📶 WiFi Card Generator
 
+![WiFi Card Generator Banner](assets/banner.png)
+
 Generate beautiful, printable WiFi cards with QR codes in seconds.
 
 A modern WiFi QR generator featuring live preview, responsive design, printable cards, community QR links, and premium card-style visuals.
@@ -32,22 +34,23 @@ Built by **The AI GUY 👽🤖**
 
 ### Main Interface
 
-assets/preview.png
+![Main Interface](assets/preview.png)
 
 ### Card Preview
 
-assets\Screenshot-1.png
+![Card Preview](assets/screenshot-1.png)
 
 ### Mobile / Print View
 
-assets\Screenshot-2.png
+![Mobile Print View](assets/screenshot-2.png)
+
 ---
 
 ## 🚀 Live Demo
 
-GitHub Pages:
+### GitHub Pages
 
-https://the-ai-gui.github.io/wifi-card-generator/
+👉 https://the-ai-gui.github.io/wifi-card-generator/
 
 ---
 
@@ -112,6 +115,7 @@ wifi-card-generator/
 ├── script.js
 │
 ├── assets/
+│   ├── banner.png
 │   ├── preview.png
 │   ├── screenshot-1.png
 │   └── screenshot-2.png
@@ -125,13 +129,13 @@ wifi-card-generator/
 
 ## 🎯 Use Cases
 
-- Home WiFi Setup
-- Guest WiFi Access
-- Hotels & Hostels
-- Cafes & Restaurants
-- Offices & Meeting Rooms
-- Schools & Libraries
-- Events & Conferences
+- 🏠 Home WiFi Setup
+- 👥 Guest WiFi Access
+- 🏨 Hotels & Hostels
+- ☕ Cafes & Restaurants
+- 🏢 Offices & Meeting Rooms
+- 📚 Schools & Libraries
+- 🎪 Events & Conferences
 
 ---
 
@@ -147,18 +151,19 @@ No apps. No typing. No hassle.
 
 Contributions, feature requests, and improvements are welcome.
 
-If you'd like to improve this project:
+To contribute:
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Submit a pull request
+1. Fork this repository
+2. Create a new branch
+3. Make your changes
+4. Commit your changes
+5. Open a Pull Request
 
 ---
 
 ## 🐛 Found a Bug?
 
-Please open an issue:
+Open an issue here:
 
 https://github.com/The-AI-gUi/wifi-card-generator/issues
 
@@ -168,9 +173,9 @@ https://github.com/The-AI-gUi/wifi-card-generator/issues
 
 ### The AI GUY 👽🤖
 
-- GitHub: https://github.com/The-AI-gUi
-- YouTube: https://www.youtube.com/@The_AI_gUi
-- Telegram: https://t.me/+ftkLjIBFmAo0OTVl
+- 🌐 GitHub: https://github.com/The-AI-gUi
+- ▶️ YouTube: https://www.youtube.com/@The_AI_gUi
+- 💬 Telegram: https://t.me/+ftkLjIBFmAo0OTVl
 
 ---
 
@@ -178,9 +183,10 @@ https://github.com/The-AI-gUi/wifi-card-generator/issues
 
 If you found this project useful:
 
-- Star the repository ⭐
-- Share it with others 🚀
-- Subscribe on YouTube ▶️
+- ⭐ Star the repository
+- 🍴 Fork the project
+- 🚀 Share it with others
+- ▶️ Subscribe on YouTube
 
 ---
 
@@ -188,10 +194,14 @@ If you found this project useful:
 
 This project is licensed under the MIT License.
 
-See the LICENSE file for details.
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
-<p align="center">
-Made with ❤️ by <strong>The AI GUY 👽🤖</strong>
-</p>
+<div align="center">
+
+### Made with ❤️ by The AI GUY 👽🤖
+
+**If you like this project, consider giving it a ⭐ on GitHub.**
+
+</div>
